@@ -1,0 +1,29 @@
+// Constructor Function for People
+function Person(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    
+    // Regular Function for fullName
+    this.getFullName = function() {
+        return `${this.firstName} ${this.lastName}`;
+    };
+
+    // Arrow Function for greeting
+    this.greet = () => {
+        console.log(`Hello, ${this.getFullName()}!`);
+    };
+}
+
+// Creating Objects using the Constructor
+const person1 = new Person("John", "Doe");
+const person2 = new Person("Alice", "Smith");
+
+// Accessing Object Properties and Calling Methods
+console.log(person1.firstName); // "John"
+console.log(person2.lastName); // "Smith"
+console.log(person1.getFullName()); // "John Doe"
+console.log(person2.getFullName()); // "Alice Smith"
+
+// Calling the Arrow Function Method
+person1.greet(); // "Hello, John Doe!"
+person2.greet(); // "Hello, Alice Smith!"
