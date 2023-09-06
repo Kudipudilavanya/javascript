@@ -1,0 +1,36 @@
+// Loop Program
+
+// Using a for loop to display numbers from 1 to 5
+console.log("Using a for loop to display numbers from 1 to 5:");
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+
+// Using a while loop to calculate the sum of numbers from 1 to 10
+console.log("\nUsing a while loop to calculate the sum of numbers from 1 to 10:");
+let sum = 0;
+let counter = 1;
+while (counter <= 10) {
+    sum += counter;
+    counter++;
+}
+console.log(`The sum of numbers from 1 to 10 is: ${sum}`);
+
+// Using a do...while loop to prompt the user until they enter a valid number
+console.log("\nUsing a do...while loop to prompt the user until they enter a valid number:");
+let userInput;
+do {
+    userInput = parseFloat(prompt("Enter a number:"));
+} while (isNaN(userInput));
+console.log(`You entered a valid number: ${userInput}`);
+
+// Using a for...in loop to iterate over an object's properties
+console.log("\nUsing a for...in loop to iterate over an object's properties:");
+const person = {
+    name: "John",
+    age: 30,
+    city: "New York"
+};
+for (let key in person) {
+    console.log(`${key}: ${person[key]}`);
+}
