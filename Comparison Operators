@@ -1,0 +1,18 @@
+// Comparison Operators
+const num1 = 10;
+const num2 = 5;
+
+console.log("Comparison Operators:");
+console.log(`Is ${num1} equal to ${num2}? ${num1 === num2}`); // false
+console.log(`Is ${num1} not equal to ${num2}? ${num1 !== num2}`); // true
+console.log(`Is ${num1} greater than ${num2}? ${num1 > num2}`); // true
+console.log(`Is ${num1} less than ${num2}? ${num1 < num2}`); // false
+
+// Logical Operators
+const isTrue = true;
+const isFalse = false;
+
+console.log("\nLogical Operators:");
+console.log(`${isTrue} AND ${isFalse} = ${isTrue && isFalse}`); // false
+console.log(`${isTrue} OR ${isFalse} = ${isTrue || isFalse}`); // true
+console.log(`NOT ${isTrue} = ${!isTrue}`); // false
