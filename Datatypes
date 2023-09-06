@@ -1,0 +1,49 @@
+// String
+const name = "John";
+
+// Number
+const age = 30;
+
+// Boolean
+const isStudent = true;
+
+// Array
+const fruits = ["apple", "banana", "cherry"];
+
+// Object
+const person = {
+    firstName: "Alice",
+    lastName: "Smith",
+    city: "New York"
+};
+
+// Undefined
+let variableUndefined;
+
+// Null
+const emptyValue = null;
+
+// Display data and perform operations
+console.log(`Name: ${name} (String)`);
+console.log(`Age: ${age} (Number)`);
+console.log(`Is Student: ${isStudent} (Boolean)`);
+console.log(`Fruits: ${fruits} (Array)`);
+console.log(`Person: ${JSON.stringify(person)} (Object)`); // Convert object to a string for display
+
+// Operations
+const num1 = 10;
+const num2 = 5;
+
+const sum = num1 + num2;
+const difference = num1 - num2;
+const product = num1 * num2;
+const quotient = num1 / num2;
+
+console.log(`Sum: ${sum} (Number)`);
+console.log(`Difference: ${difference} (Number)`);
+console.log(`Product: ${product} (Number)`);
+console.log(`Quotient: ${quotient} (Number)`);
+
+// Data types
+console.log(`Undefined Variable: ${variableUndefined} (Undefined)`);
+console.log(`Empty Value: ${emptyValue} (Null)`);
