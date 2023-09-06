@@ -1,0 +1,29 @@
+// String Conversion (ToString)
+const number = 42;
+const stringNumber = String(number);
+console.log(`String Conversion: ${stringNumber}`); // "42"
+
+// Number Conversion (ToNumber)
+const numericString = "123";
+const numberFromNumericString = Number(numericString);
+console.log(`Number Conversion: ${numberFromNumericString}`); // 123
+
+const nonNumericString = "hello";
+const numberFromNonNumericString = Number(nonNumericString);
+console.log(`Number Conversion (Non-numeric): ${numberFromNonNumericString}`); // NaN
+
+// Integer Conversion (parseInt)
+const integerString = "456";
+const integer = parseInt(integerString);
+console.log(`Integer Conversion: ${integer}`); // 456
+
+// Floating-Point Conversion (parseFloat)
+const floatString = "3.14159";
+const float = parseFloat(floatString);
+console.log(`Floating-Point Conversion: ${float}`); // 3.14159
+
+// Boolean Conversion (ToBoolean)
+const falsyValue = 0;
+const truthyValue = "Hello";
+console.log(`Boolean Conversion (Falsy Value): ${Boolean(falsyValue)}`); // false
+console.log(`Boolean Conversion (Truthy Value): ${Boolean(truthyValue)}`); // true
