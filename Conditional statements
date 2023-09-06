@@ -1,0 +1,36 @@
+// Conditional Statements Program
+
+// Prompt the user for their age
+const userAge = parseInt(prompt("Enter your age:"));
+
+// Check the age and display a message
+if (userAge < 18) {
+    console.log("You are a minor.");
+} else if (userAge >= 18 && userAge < 60) {
+    console.log("You are an adult.");
+} else {
+    console.log("You are a senior citizen.");
+}
+
+// Determine if a number is even or odd
+const numberToCheck = parseInt(prompt("Enter a number to check if it's even or odd:"));
+
+if (isNaN(numberToCheck)) {
+    console.log("Invalid input. Please enter a valid number.");
+} else {
+    if (numberToCheck % 2 === 0) {
+        console.log(`${numberToCheck} is an even number.`);
+    } else {
+        console.log(`${numberToCheck} is an odd number.`);
+    }
+}
+
+// Calculate the absolute value of a number
+const inputNumber = parseFloat(prompt("Enter a number to calculate its absolute value:"));
+
+if (isNaN(inputNumber)) {
+    console.log("Invalid input. Please enter a valid number.");
+} else {
+    const absoluteValue = inputNumber < 0 ? -inputNumber : inputNumber;
+    console.log(`The absolute value of ${inputNumber} is ${absoluteValue}.`);
+}
