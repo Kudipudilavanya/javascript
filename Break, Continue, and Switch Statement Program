@@ -1,0 +1,48 @@
+// Break, Continue, and Switch Statement Program
+
+// Using break to exit a loop
+console.log("Using 'break' to exit a loop:");
+for (let i = 1; i <= 5; i++) {
+    if (i === 3) {
+        console.log("Breaking the loop at i = 3");
+        break;
+    }
+    console.log(i);
+}
+
+// Using continue to skip an iteration
+console.log("\nUsing 'continue' to skip an iteration:");
+for (let i = 1; i <= 5; i++) {
+    if (i === 3) {
+        console.log("Skipping i = 3");
+        continue;
+    }
+    console.log(i);
+}
+
+// Using a switch statement to handle different cases
+console.log("\nUsing a 'switch' statement to handle different cases:");
+const dayOfWeek = 4; // Assume it's Wednesday
+let dayName;
+
+switch (dayOfWeek) {
+    case 1:
+        dayName = "Monday";
+        break;
+    case 2:
+        dayName = "Tuesday";
+        break;
+    case 3:
+        dayName = "Wednesday";
+        break;
+    case 4:
+        dayName = "Thursday";
+        break;
+    case 5:
+        dayName = "Friday";
+        break;
+    default:
+        dayName = "Weekend";
+}
+
+console.log(`It's ${dayName}.`);
