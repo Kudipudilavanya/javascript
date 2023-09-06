@@ -1,0 +1,52 @@
+// Arithmetic operators
+const num1 = 10;
+const num2 = 5;
+
+const addition = num1 + num2;
+const subtraction = num1 - num2;
+const multiplication = num1 * num2;
+const division = num1 / num2;
+const modulus = num1 % num2;
+
+console.log("Arithmetic Operators:");
+console.log(`Addition: ${num1} + ${num2} = ${addition}`);
+console.log(`Subtraction: ${num1} - ${num2} = ${subtraction}`);
+console.log(`Multiplication: ${num1} * ${num2} = ${multiplication}`);
+console.log(`Division: ${num1} / ${num2} = ${division}`);
+console.log(`Modulus: ${num1} % ${num2} = ${modulus}`);
+
+// Comparison operators
+const isEqual = num1 === num2;
+const isNotEqual = num1 !== num2;
+const isGreaterThan = num1 > num2;
+const isLessThan = num1 < num2;
+
+console.log("\nComparison Operators:");
+console.log(`Is Equal: ${num1} === ${num2} => ${isEqual}`);
+console.log(`Is Not Equal: ${num1} !== ${num2} => ${isNotEqual}`);
+console.log(`Is Greater Than: ${num1} > ${num2} => ${isGreaterThan}`);
+console.log(`Is Less Than: ${num1} < ${num2} => ${isLessThan}`);
+
+// Logical operators
+const isTrue = true;
+const isFalse = false;
+
+const andResult = isTrue && isFalse;
+const orResult = isTrue || isFalse;
+const notResult = !isTrue;
+
+console.log("\nLogical Operators:");
+console.log(`AND Operator: ${isTrue} && ${isFalse} => ${andResult}`);
+console.log(`OR Operator: ${isTrue} || ${isFalse} => ${orResult}`);
+console.log(`NOT Operator: !${isTrue} => ${notResult}`);
+
+// Assignment operators
+let x = 5;
+let y = 3;
+
+x += y; // Equivalent to x = x + y
+y *= 2; // Equivalent to y = y * 2
+
+console.log("\nAssignment Operators:");
+console.log(`x after x += y: ${x}`);
+console.log(`y after y *= 2: ${y}`);
