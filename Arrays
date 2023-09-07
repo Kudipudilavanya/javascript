@@ -1,0 +1,32 @@
+// Creating an array
+let fruits = ["apple", "banana", "cherry"];
+
+// Accessing elements of an array
+console.log(fruits[0]); // Output: "apple"
+console.log(fruits[1]); // Output: "banana"
+
+// Modifying elements of an array
+fruits[2] = "strawberry";
+console.log(fruits); // Output: ["apple", "banana", "strawberry"]
+
+// Adding elements to an array
+fruits.push("orange");
+console.log(fruits); // Output: ["apple", "banana", "strawberry", "orange"]
+
+// Removing elements from an array
+fruits.pop(); // Removes the last element
+console.log(fruits); // Output: ["apple", "banana", "strawberry"]
+
+// Finding the length of an array
+let length = fruits.length;
+console.log(length); // Output: 3
+
+// Iterating through an array using a for loop
+for (let i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}
+
+// Iterating through an array using a for...of loop
+for (let fruit of fruits) {
+  console.log(fruit);
+}
