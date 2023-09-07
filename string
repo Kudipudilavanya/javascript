@@ -1,0 +1,40 @@
+// Creating a string
+let greeting = "Hello, World!";
+
+// Displaying the string
+console.log("String:", greeting);
+
+// Finding the length of a string
+let length = greeting.length;
+console.log("Length:", length);
+
+// Accessing individual characters in a string
+console.log("Character at index 0:", greeting[0]);
+console.log("Character at index 7:", greeting[7]);
+
+// Concatenating strings
+let firstName = "John";
+let lastName = "Doe";
+let fullName = firstName + " " + lastName;
+console.log("Full Name:", fullName);
+
+// String methods
+console.log("Uppercase:", greeting.toUpperCase());
+console.log("Lowercase:", greeting.toLowerCase());
+console.log("Substring:", greeting.substring(0, 5));
+console.log("Split:", greeting.split(", "));
+
+// Finding and replacing substrings
+console.log("Index of 'World':", greeting.indexOf("World"));
+let replacedGreeting = greeting.replace("World", "Universe");
+console.log("Replaced Greeting:", replacedGreeting);
+
+// Checking if a string includes a substring
+console.log("Includes 'Hello':", greeting.includes("Hello"));
+console.log("Includes 'Goodbye':", greeting.includes("Goodbye"));
+
+// Removing leading and trailing whitespace
+let stringWithWhitespace = "   Trim me!   ";
+console.log("With Whitespace:", stringWithWhitespace);
+let trimmedString = stringWithWhitespace.trim();
+console.log("Trimmed:", trimmedString);
