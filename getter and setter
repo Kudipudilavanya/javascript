@@ -1,4 +1,7 @@
-In JavaScript, you can use getter and setter methods to control access to object properties. Getter methods allow you to retrieve the value of a property, and setter methods allow you to set or modify the value of a property while providing validation or additional logic. Here's a JavaScript program that demonstrates the use of getter and setter methods:
+In JavaScript, you can use getter and setter methods to control access to object properties. 
+Getter methods allow you to retrieve the value of a property, and setter methods allow you to 
+set or modify the value of a property while providing validation or additional logic. Here's a
+JavaScript program that demonstrates the use of getter and setter methods:
 
 javascript
 Copy code
