@@ -1,0 +1,33 @@
+// Creating a 2D array (3x3 grid)
+let grid = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+// Displaying the 2D array
+console.log("2D Array:");
+for (let row of grid) {
+  console.log(row.join("\t"));
+}
+
+// Accessing an element in the 2D array
+let element = grid[1][2];
+console.log("Element at grid[1][2]: " + element);
+
+// Modifying an element in the 2D array
+grid[0][0] = 0;
+
+// Displaying the updated 2D array
+console.log("Updated 2D Array:");
+for (let row of grid) {
+  console.log(row.join("\t"));
+}
+
+// Iterating through the 2D array
+console.log("Iterating through the 2D Array:");
+for (let i = 0; i < grid.length; i++) {
+  for (let j = 0; j < grid[i].length; j++) {
+    console.log("Element at grid[" + i + "][" + j + "]: " + grid[i][j]);
+  }
+}
