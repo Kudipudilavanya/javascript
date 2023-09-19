@@ -1,0 +1,36 @@
+try {
+  // Code that may throw an exception or error
+  const result = someFunction(); // Replace with your code
+  console.log(result);
+} catch (error) {
+  // Code to handle the exception or error
+  console.error("An error occurred:", error);
+} finally {
+  // Code that will always run, whether there was an error or not
+  console.log("This code always runs, even if there was an error.");
+}
+ 
+Here's a more concrete example:
+
+javascript
+Copy code
+function divide(a, b) {
+  try {
+    if (b === 0) {
+      throw new Error("Division by zero is not allowed.");
+    }
+    return a / b;
+  } catch (error) {
+    console.error("An error occurred:", error.message);
+    return "Error: " + error.message;
+  } finally {
+    console.log("Division operation finished.");
+  }
+}
+
+console.log(divide(10, 2)); // Output: 5
+console.log(divide(10, 0)); // Output: Error: Division by zero is not allowed.
+ 
+
+
+
